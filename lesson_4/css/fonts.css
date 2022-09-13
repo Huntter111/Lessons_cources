@@ -1,0 +1,55 @@
+/* font-family: 'Roboto', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* ! Сімейство шрифтів Larsseit */
+@font-face {
+	font-family: Larsseit;
+	src: url("../fonts/larsseit/Larsseit.woff2") format("woff2"),
+		url("../fonts/larsseit/Larsseit.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Larsseit;
+	src: url("../fonts/larsseit/Larsseit-Medium.woff2") format("woff2"),
+		url("../fonts/larsseit/Larsseit-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Larsseit;
+	src: url("../fonts/larsseit/Larsseit-Bold.woff2") format("woff2"),
+		url("../fonts/larsseit/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* ! Сімейство шрифтів Lato - кирилиця */
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
+		url("../fonts/lato/Lato-Regular.woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"),
+		url("../fonts/lato/Lato-Bold.woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/lato/Lato-Black.woff2") format("woff2"),
+		url("../fonts/lato/Lato-Black.woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}

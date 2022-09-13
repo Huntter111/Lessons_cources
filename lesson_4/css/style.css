@@ -1,0 +1,50 @@
+body {
+	font-family: Larsseit;
+	font-weight: 500;
+}
+.title {
+	font-family: 'Roboto';
+	color: crimson;
+	font-weight: 700;
+}
+
+.nav-lsit .item {
+	color: #0000ff;
+	font-family: Lato;
+	font-weight: 700;
+}
+.subtitle {
+	color: #008000;
+	font-family: 'Roboto';
+	font-weight: 700;
+}
+.content > p {
+	color: red;
+	font-weight: 700;
+}
+
+li.item {
+	color: #a52a2a;
+	font-weight: 700;
+}
+.title-sub {
+	font-family: 'Roboto';
+	color: rgb(9, 236, 27);
+	font-weight: 700;
+}
+.text-bold {
+	color: #ff0080;
+	font-family: Lato;
+	font-weight: 900;
+}
+.list-design + p {
+	color: #00f7ff;
+}
+.item-design {
+	color: #ffd900;
+}
+.text {
+	color: #9500eb;
+	font-family: Lato;
+	font-weight: 900;
+}
