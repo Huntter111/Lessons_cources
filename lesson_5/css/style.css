@@ -1,0 +1,182 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.header-container {
+	padding: 20px 20px;
+	margin-bottom: 80px;
+}
+.header-subtitle {
+	font-family: 'SF Mono';
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.4;
+	letter-spacing: 0.25em;
+	text-align: center;
+	color: rgba(219, 0, 255, 0.6);
+	text-transform: uppercase;
+}
+.main-header {
+	margin-bottom: 70px;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-shadow: 5px 2px 5px #bebebe;
+}
+.main-header__title {
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 1.1;
+	margin-bottom: 60px;
+}
+.main-header__text {
+	font-family: 'SF Mono';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	font-style: italic;
+	text-indent: 60px;
+}
+.main-header__text.text-old {
+	text-decoration: line-through;
+	text-indent: 30px;
+}
+.main-body {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+h2 {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.4;
+}
+h3 {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.4;
+}
+.web-studios__title {
+	margin-bottom: 30px;
+}
+.img-wrapper img {
+	width: 800px;
+	margin-bottom: 50px;
+}
+.web-studios__subtitle {
+	margin-bottom: 30px;
+}
+.web-studios__text {
+	font-family: 'SF Mono';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	text-shadow: 5px 3px 5px #818181;
+}
+.web-studios__list {
+	margin-bottom: 30px;
+}
+.list {
+	font-family: 'SF Mono';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.4;
+}
+.list__item {
+	margin-bottom: 10px;
+}
+.web-studios__name {
+	font-family: 'SF Mono';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 60px;
+	display: block;
+}
+.subtitle {
+	margin-bottom: 30px;
+}
+.digital-marketing__subtitle {
+	margin-bottom: 20px;
+}
+.digital-marketing__text {
+	font-family: 'SF Mono';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.3;
+	margin-bottom: 20px;
+	text-decoration: overline;
+}
+.digital-marketing__list {
+	margin-bottom: 40px;
+}
+.digital-marketing__text mark {
+	text-transform: lowercase;
+	display: block;
+	margin-bottom: 50px;
+}
+.search-company__title {
+	margin-bottom: 50px;
+}
+.search-company__subtitle {
+	margin-bottom: 30px;
+}
+.search-company__text {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	word-spacing: 20px;
+	text-transform: capitalize;
+	text-align: justify;
+}
+.search-company__list {
+	margin-bottom: 40px;
+}
+.search-company__name {
+	display: block;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+.product-companies {
+	margin-bottom: 50px;
+}
+.product-companies__subtitle {
+	margin-bottom: 30px;
+}
+.product-companies__text {
+	font-family: 'SF Mono';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.6;
+	text-shadow: 5px -3px 5px #7bff00;
+	margin-bottom: 20px;
+}
+.product-companies__name {
+	display: block;
+	width: 150px;
+	font-family: 'SF Mono';
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.4;
+}
+.footer-container {
+	padding: 50px 50px;
+}
+.footer-subtitle {
+	text-align: right;
+	font-style: oblique;
+	color: #db00ff;
+	letter-spacing: -10px;
+}
+.footer-link {
+	display: block;
+	font-family: 'SF Mono';
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.4;
+	text-decoration: overline;
+}
