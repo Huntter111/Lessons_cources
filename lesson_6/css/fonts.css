@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* ! Підлючення шрифтів SF Mono */
+@font-face {
+	font-family: 'SF-Mono';
+	src: url('../fonts/SFMono-Regular.woff2') format('woff2'),
+		url('../fonts/SFMono-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF-Mono';
+	src: url('../fonts/SFMono-Bold.woff2') format('woff2'),
+		url('../fonts/SFMono-Bold.woff2') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
