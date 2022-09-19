@@ -140,6 +140,8 @@ section {
 	box-shadow: inset 1px 1px 100px #00ffc8;
 }
 .main-text {
+	height: 100px;
+	overflow: scroll;
 	margin-bottom: 20px;
 	outline: 5px dashed #00ffea;
 	padding: 10px;
