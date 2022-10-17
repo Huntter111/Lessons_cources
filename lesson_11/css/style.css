@@ -1,0 +1,197 @@
+body {
+	font-family: 'Inter';
+	font-style: normal;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+[class*='__container'] {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* * Header */
+.header {
+	padding: 40px 0;
+	position: fixed;
+	background-color: rgba(43, 255, 0);
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+}
+.header__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+}
+.menu__item {
+	margin-right: 10px;
+}
+.menu__item:hover {
+	color: #ffffff;
+}
+
+/* * Car */
+.content {
+	background: url('../img/bg.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 950px;
+	margin-top: 100px;
+}
+.content__block {
+	margin-bottom: 100px;
+}
+.content__image-frame {
+	position: relative;
+	top: 700px;
+	left: 500px;
+	z-index: 20;
+}
+.content__image-spoiler {
+	position: relative;
+	top: 650px;
+	left: 470px;
+	z-index: 1;
+	z-index: 20;
+}
+.content__image-decorate {
+	position: relative;
+	top: 670px;
+	left: 404px;
+	z-index: 25;
+}
+.content__image-helm {
+	position: relative;
+	top: 730px;
+	left: -40px;
+}
+.content__image-seat {
+	position: relative;
+	top: 650px;
+	left: 35px;
+}
+.content__image-wheel-right {
+	position: relative;
+	top: 740px;
+	left: -400px;
+	z-index: 30;
+}
+.content__image-wheel-left {
+	position: relative;
+	top: 740px;
+	left: -90px;
+	z-index: 30;
+}
+
+.content__image-wheel-disk-right {
+	position: relative;
+	top: 762px;
+	left: -678px;
+	z-index: 35;
+}
+.content__image-wheel-disk-left {
+	position: relative;
+	top: 764px;
+	left: -318px;
+	z-index: 35;
+}
+/* * Home work */
+
+.card {
+	border-radius: 60px;
+	max-width: 400px;
+	position: relative;
+}
+.card-image {
+	border-radius: 60px 60px 0 0;
+	overflow: hidden;
+}
+.card-image img {
+	max-width: 100%;
+}
+.card-info {
+	padding: 20px 20px 25px 20px;
+	background-color: rgb(211, 211, 211);
+	border-radius: 0px 0px 60px 60px;
+}
+.card__name {
+	margin-bottom: 40px;
+}
+.card__name span {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.3;
+}
+
+.card-price__old {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.3;
+	-webkit-text-decoration-line: line-through;
+	text-decoration-line: line-through;
+	margin-bottom: 20px;
+}
+.card-price__new {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.3;
+	color: #ff0000;
+	margin-bottom: 30px;
+}
+.button {
+	display: block;
+	color: #ffffff;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.3;
+	background: #a16fe2;
+}
+.button__buy {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px;
+	border-radius: 60px;
+}
+.sale {
+	position: absolute;
+	left: 330px;
+	top: 44px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.3;
+	text-transform: uppercase;
+	background: #ff0000;
+	opacity: 0.95;
+	border-radius: 20px;
+	padding: 9px 24px;
+}
+/* * Sticky */
+.menu-sticky {
+	padding: 100px 0;
+}
+.menu-sticky h2 {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 110px;
+	font-weight: 900;
+	font-size: 45px;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 20px;
+	background-color: rgb(0, 255, 242);
+	opacity: 0.8;
+}
+.menu-sticky p {
+	line-height: 1.5;
+	font-size: 22px;
+}
