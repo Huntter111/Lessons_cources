@@ -1,0 +1,138 @@
+[class*='__container'] {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+.page {
+	padding: 100px;
+	background: linear-gradient(
+		255.27deg,
+		rgba(0, 209, 255, 0.648) 8.43%,
+		rgba(51, 144, 255, 0.712) 34.23%,
+		rgba(127, 33, 247, 0.728) 48.32%,
+		rgba(255, 3, 3, 0.664) 77.84%,
+		rgba(255, 0, 184, 0.544) 99.85%
+	);
+}
+
+.image {
+	display: inline-block;
+}
+.example {
+	padding: 100px 0 300px 0;
+}
+.image img {
+	position: relative;
+	z-index: 5;
+}
+.image::before {
+	content: '';
+	position: absolute;
+	width: 400px;
+	height: 394px;
+	background: #c12828;
+	border-radius: 60px;
+	transform: rotate(15.67deg);
+	z-index: 3;
+}
+
+/* * FACE */
+.head {
+	position: relative;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+.head-images__face {
+	position: relative;
+	z-index: 10;
+}
+
+.eye-left {
+	position: absolute;
+	left: 34%;
+	top: 25%;
+	z-index: 20;
+}
+.eye-left::before {
+	position: absolute;
+	content: '';
+	background: #0a84a5;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	left: 25px;
+	top: -15px;
+}
+.eye-left::after {
+	position: absolute;
+	content: '';
+	background: url('../img/eye.svg') no-repeat;
+	width: 100%;
+	height: 100%;
+	transform: translate(-11%, 70%) scale(2);
+}
+.eye-right {
+	position: absolute;
+	left: 54%;
+	top: 25%;
+	z-index: 20;
+	transform: rotateY(180deg);
+}
+.eye-right::before {
+	position: absolute;
+	content: '';
+	background: #0a84a5;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	left: 25px;
+	top: -15px;
+}
+.eye-right::after {
+	position: absolute;
+	content: '';
+	background: url('../img/eye.svg') no-repeat;
+	width: 100%;
+	height: 100%;
+	transform: translate(-11%, 70%) scale(2);
+}
+.head-images__hair {
+	position: absolute;
+	top: -180px;
+	left: 307px;
+	transform: rotate(-142.91deg);
+	z-index: 5;
+}
+
+.head-images__eyebrow-left {
+	position: absolute;
+	top: 58px;
+	left: 447px;
+	z-index: 30;
+	transform: rotate(270deg);
+}
+.head-images__eyebrow-right {
+	position: absolute;
+	top: 58px;
+	left: 687px;
+	z-index: 30;
+	transform: rotate(90deg);
+}
+.head-images__nose {
+	position: absolute;
+	top: 220px;
+	left: 560px;
+	z-index: 30;
+	transform: rotate(315deg);
+}
+.head-images__mouth {
+	position: absolute;
+	top: 320px;
+	left: 510px;
+	z-index: 30;
+}
