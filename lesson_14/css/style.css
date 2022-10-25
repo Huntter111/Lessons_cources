@@ -101,10 +101,10 @@ body {
 }
 .caravana__image {
 	transform: translateX(30px);
+	border-radius: 5px;
 }
 .caravana__image img {
 	max-width: 100%;
-	border-radius: 5px;
 }
 
 /* ? Style About US */
@@ -130,7 +130,7 @@ body {
 	top: 66px;
 	background: #f2c94c;
 }
-.block__title {
+.block-content__title {
 	font-family: 'Quattrocento';
 	font-weight: 400;
 	font-size: 60px;
@@ -138,14 +138,14 @@ body {
 	margin-bottom: 48px;
 }
 
-.about-us__text {
+.block-content__text {
 	flex-grow: 1;
 	font-size: 25px;
 	line-height: 1.6;
 	letter-spacing: 0.09em;
 	margin-bottom: 15px;
 }
-.about-us__button {
+.block-content__button {
 	font-size: 17px;
 	line-height: 1.3;
 	color: #f2c94c;
@@ -158,6 +158,7 @@ body {
 	border: 2px solid rgba(255, 191, 0, 0.7);
 	transition: all 0.3s;
 }
+
 .block-content__image {
 	max-width: 100%;
 }
