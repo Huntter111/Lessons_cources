@@ -314,17 +314,14 @@ body {
 }
 .about-us__item::before {
 	content: '';
+	display: inline-block;
 	position: absolute;
 	background: url('../img/about-us/icons/done.svg') 0 0 no-repeat;
 	width: 16px;
 	height: 16px;
 	top: 5px;
 	left: 0;
-}
-.about-us__item:hover::before {
-	content: '';
-	transform: scale(1.2);
-	transition: transform 1s ease;
+	transition: transform 0.3s ease;
 }
 
 .about-us__item:not(:last-child) {
