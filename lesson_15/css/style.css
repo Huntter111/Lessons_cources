@@ -314,7 +314,7 @@ body {
 }
 .about-us__item::before {
 	content: '';
-	display: inline-block;
+	/* display: inline-block; */
 	position: absolute;
 	background: url('../img/about-us/icons/done.svg') 0 0 no-repeat;
 	width: 16px;
@@ -323,7 +323,9 @@ body {
 	left: 0;
 	transition: transform 0.3s ease;
 }
-
+.about-us__item:hover::before {
+	transform: scale(1.2);
+}
 .about-us__item:not(:last-child) {
 	margin-bottom: 12px;
 }
