@@ -90,9 +90,10 @@ body {
 
 .main-block__container {
 	position: relative;
-	z-index: 5;
+	z-index: 50;
 }
 .main-block {
+	position: relative;
 	padding: 200px 0 80px 0;
 	background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
 }
@@ -224,53 +225,53 @@ body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	/* z-index: 1; */
 }
 .decor-main__item {
 	position: absolute;
-	z-index: 2;
+	/* z-index: 2; */
 }
 .decor-main__item--1 {
 	background: url('../img/main/decor-1.svg') 0 0 no-repeat;
 	width: 96px;
 	height: 96px;
-	top: 12%;
-	left: 4.5%;
+	top: 12.3%;
+	left: 4.2%;
 }
 .decor-main__item--2 {
 	background: url('../img/main/decor-2.svg') 0 0 no-repeat;
 	width: 284px;
 	height: 284px;
-	top: 45%;
-	left: -6%;
+	bottom: -9.2%;
+	left: -5.8%;
 }
 .decor-main__item--3 {
 	background: url('../img/main/decor-3.svg') 0 0 no-repeat;
 	width: 88px;
 	height: 47px;
-	top: 25%;
-	left: 40.7%;
+	top: 45%;
+	left: 40%;
 }
 .decor-main__item--4 {
 	background: url('../img/main/decor-4.svg') 0 0 no-repeat;
 	width: 61px;
 	height: 61px;
-	top: 39%;
+	top: 70.1%;
 	left: 38.1%;
 }
 .decor-main__item--5 {
 	background: url('../img/main/decor-1.svg') 0 0 no-repeat;
 	width: 96px;
 	height: 96px;
-	top: 1%;
-	right: 4.1%;
+	top: -4.1%;
+	right: 5%;
 	transform: rotate(135deg);
 }
 .decor-main__item--6 {
 	background: url('../img/main/decor-5.svg') 0 0 no-repeat;
 	width: 187px;
 	height: 137px;
-	top: 40%;
+	bottom: 15.5%;
 	right: -3.4%;
 }
 /* ============================================ */
@@ -279,9 +280,11 @@ body {
 
 .block-about__container {
 	position: relative;
-	z-index: 2;
+	z-index: 50;
 }
-
+.block-about {
+	position: relative;
+}
 .about-us {
 	padding: 180px 0 180px 0;
 	display: flex;
@@ -318,6 +321,11 @@ body {
 	top: 5px;
 	left: 0;
 }
+.about-us__item:hover::before {
+	content: '';
+	transform: scale(1.2);
+	transition: transform 1s ease;
+}
 
 .about-us__item:not(:last-child) {
 	margin-bottom: 12px;
@@ -346,15 +354,15 @@ body {
 	background: url('../img/about-us/decor/01.svg') 0 0 no-repeat;
 	width: 216px;
 	height: 225px;
-	top: 65%;
-	left: -6%;
+	top: 22.2%;
+	left: -5.7%;
 	opacity: 0.8;
 }
 .decor-about-us__item--2 {
 	background: url('../img/about-us/decor/02.svg') 0 0 no-repeat;
 	width: 287px;
 	height: 287px;
-	top: 75%;
-	right: -9%;
+	top: 40.4%;
+	right: -8.5%;
 	opacity: 0.8;
 }
