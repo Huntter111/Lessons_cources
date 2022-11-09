@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/components.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Lesson 16</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">HEADER</header>
+			<!-- /.header -->
+
+			<main class="page">
+				<section class="block-example">
+					<div class="page__container">
+						<h2 class="page__title">Оформлення замовлення</h2>
+						<form
+							action="https://jsonplaceholder.typicode.com/posts"
+							method="POST"
+							class="form"
+						>
+							<div class="form__line">
+								<label class="form__label" for="example-name">Введіть ім'я</label>
+								<input
+									required
+									id="example-name"
+									type="text"
+									class="form__input"
+									placeholder="Наприкалад: Артем"
+									name="name"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-last-name">Введіть Прізвище</label>
+								<input
+									id="example-last-name"
+									type="text"
+									class="form__input"
+									placeholder="Наприкалад: Симоненко"
+									name="example-last-name"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-quality">Введіть ваш вік</label>
+								<input
+									type="number"
+									id="example-quality"
+									name="example-quality"
+									class="form__input"
+									placeholder="Наприкалад: 22"
+									min="10"
+									max="110"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-email">Введіть ваш email</label>
+								<input
+									type="email"
+									id="example-email"
+									class="form__input"
+									placeholder="Наприклад, ivan@gmail.com"
+									name="example-email"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-city">Ваше місто</label>
+								<select
+									id="example-city"
+									type="tel"
+									class="form__select"
+									placeholder="Київ"
+									name="example-city"
+								>
+									<option value="">Київ</option>
+									<option value="">Одеса</option>
+									<option value="">Дніпро</option>
+									<option value="">Львів</option>
+								</select>
+							</div>
+							<div class="form__line">
+								<label class="form__label" for="example-phone-nuber"
+									>Введіть ваш телефон</label
+								>
+								<input
+									id="example-phone-nuber"
+									type="tel"
+									class="form__input"
+									placeholder="+380 XX XXX XX XX"
+									name="example-phone-nuber"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-when-order"
+									>Коли вам зручно отримаи замовлення</label
+								>
+								<input
+									id="example-when-order"
+									type="date"
+									class="form__input"
+									placeholder="Оберіть дату"
+									name="example-when-order"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-color-order"
+									>Колір замовлення</label
+								>
+								<input
+									id="example-color-order"
+									type="color"
+									class="form__input form__input--color"
+									placeholder="Оберіть колір"
+									name="example-color-order"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label" for="example-price-order">Ціна замовлення</label>
+								<input
+									id="example-price-order"
+									type="range"
+									class="form__input"
+									placeholder="Оберіть ціну"
+								/>
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<div class="form__radio">
+									<input
+										type="radio"
+										id="example-np"
+										name="example-order"
+										class="form__input form__checkbox"
+									/>
+									<label class="form__label" for="example-np"
+										><span class="checkbox__text">Відділення Нової пошти</span></label
+									>
+								</div>
+								<!-- /.form__radio -->
+								<div class="form__radio">
+									<input
+										type="radio"
+										id="example-home"
+										name="example-order"
+										class="form__input form__checkbox"
+									/>
+									<label class="form__label" for="example-home"
+										><span class="checkbox__text">Кур’єром додому</span></label
+									>
+								</div>
+								<!-- /.form__radio -->
+							</div>
+							<!-- /.form__line -->
+							<div class="form__line">
+								<label class="form__label form__comments" for="example-comments"
+									>Коментар до замовлення</label
+								>
+								<textarea
+									id="example-comments"
+									class="form__textarea"
+									placeholder="Наприклад, відділення НП №112"
+									cols="30"
+									rows="10"
+								></textarea>
+							</div>
+
+							<!-- Кастомний чекбокс -->
+							<!--<div class="checkbox-example">
+								<input
+									id="check"
+									autocomplete="off"
+									type="checkbox"
+									value="yes"
+									name="check"
+									class="checkbox-example__input"
+								/>
+								<label for="check" class="checkbox-example__label">
+									<span class="checkbox-example__text">Я згоден з</span>
+									<a href="#" class="checkbox-example__text--uderline"
+										>умовами наданя сервісу
+									</a>
+								</label>
+							</div>-->
+							<!-- /.checkbox -->
+							<div class="form__line">
+								<button class="example-button" type="submit">Оформити замовлення</button>
+							</div>
+							<!-- /.form__line -->
+						</form>
+					</div>
+					<!-- /.page__container -->
+				</section>
+				<!-- /.block-example -->
+				<section class="drop-us">
+					<div class="drop-us__container">
+						<div class="drop">
+							<div class="drop__image">
+								<img src="img/illustration-1.svg" alt="illustration" />
+								<!-- <img src=" " alt="illustration" />  -->
+							</div>
+							<!-- /.drop__image -->
+							<div class="drop__body">
+								<div class="name-block">
+									<span class="name-block__quesition">Any questions?</span>
+									<h2 class="name-block__title">Drop us a line</h2>
+								</div>
+								<form
+									class="drop__form form-drop"
+									action="https://jsonplaceholder.typicode.com/posts"
+									method="POST"
+								>
+									<div class="form-drop__row">
+										<div class="drop-form__line">
+											<label class="drop-form__label" for="name">First Name*</label>
+											<input
+												required
+												id="name"
+												type="text"
+												class="drop-form__input"
+												placeholder="Your first name"
+												name="name"
+											/>
+										</div>
+										<!-- ?/.drop-form__line -First Name*- -->
+										<div class="drop-form__line">
+											<label class="drop-form__label" for="last-name">Last Name*</label>
+											<input
+												required
+												id="last-name"
+												type="text"
+												class="drop-form__input"
+												placeholder="Your last name"
+												name="last-name"
+											/>
+										</div>
+										<!-- ?/.drop-form__line -Last Name*- -->
+										<div class="drop-form__line">
+											<label class="drop-form__label" for="email">Email*</label>
+											<input
+												required
+												id="email"
+												type="email"
+												class="drop-form__input"
+												placeholder="Your working email"
+												name="email"
+											/>
+										</div>
+										<!-- ?/.drop-form__line -Email*- -->
+										<div class="drop-form__line">
+											<label class="drop-form__label" for="phone">Phone</label>
+											<input
+												required
+												id="phone"
+												type="tel"
+												class="drop-form__input"
+												placeholder="Your phone number"
+												name="phone"
+											/>
+										</div>
+										<!-- ?/.drop-form__line -Phone- -->
+										<div class="drop-form__line drop-form__message">
+											<label class="drop-form__label" for="phone">Message*</label>
+											<textarea
+												name="textarea"
+												id="textarea"
+												cols="30"
+												rows="10"
+											></textarea>
+										</div>
+										<!-- ?/.drop-form__line -Message*- -->
+
+										<div class="drop-form__footer">
+											<!-- ! Кастомний чекбокс -->
+											<div class="checkbox">
+												<input
+													id="check"
+													autocomplete="off"
+													type="checkbox"
+													value="yes"
+													name="check"
+													class="checkbox__input"
+												/>
+												<label for="check" class="checkbox__label">
+													<span class="checkbox__text"
+														>I agree to receive communications from Createx Online
+														School</span
+													>
+												</label>
+											</div>
+											<!-- ?/.checkbox -->
+
+											<div class="drop-form__line">
+												<button class="drop-form__button" type="submit">
+													Send message
+												</button>
+												<input type="hidden" value="1234567890" name="i'm hidden" />
+											</div>
+											<!-- ?/.drop-form__line -Button*- -->
+										</div>
+										<!-- /.drop-form__footer -->
+									</div>
+									<!-- /.form-drop__row -->
+								</form>
+							</div>
+							<!-- /.drop__body -->
+						</div>
+						<!-- /.drop -->
+					</div>
+					<!-- /.drop-us__container -->
+				</section>
+				<!-- /.drop-us -->
+			</main>
+			<!-- /.page -->
+
+			<footer class="footer">FOOTER</footer>
+			<!-- /.footer -->
+		</div>
+		<!-- /.wrapper -->
+	</body>
+</html>
