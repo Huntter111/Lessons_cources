@@ -277,3 +277,8 @@ body {
 		text-align: center;
 	}
 }
+@media (max-width: 529px) {
+	.drop-form__button {
+		max-width: 100%;
+	}
+}
