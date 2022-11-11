@@ -392,7 +392,7 @@ body {
 	right: -8.6%;
 }
 
-/* ! ==== Block-curses */
+/* ! ==== Block-curses =====*/
 .block-courses {
 	padding-bottom: 180px;
 }
@@ -466,8 +466,23 @@ body {
 	border-radius: 4px;
 	display: inline-block;
 }
-.card-cource__subtitle:nth-child(2) {
+.card-cource__subtitle--1 {
+	background: #03cea4;
+}
+.card-cource__subtitle--2 {
 	background: #5a87fc;
+}
+.card-cource__subtitle--3 {
+	background: #f89828;
+}
+.card-cource__subtitle--4 {
+	background: #03cea4;
+}
+.card-cource__subtitle--5 {
+	background: #5a87fc;
+}
+.card-cource__subtitle--6 {
+	background: #f52f6e;
 }
 /* .card-cource__subtitle:not(:last-child) {
 	margin-bottom: 20px;
