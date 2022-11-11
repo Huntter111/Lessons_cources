@@ -170,10 +170,12 @@
    .block-main__body {
       padding-right: 0px;
       text-align: center;
-      max-width: 500px;
    }
    .block-main__actions {
       justify-content: center;
+   }
+   .block-body__title {
+      text-align: center;
    }
    .advantages {
       gap: 10px;
@@ -270,8 +272,6 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
-   }
-   .cources__header {
    }
    .block-title {
       align-items: center;
