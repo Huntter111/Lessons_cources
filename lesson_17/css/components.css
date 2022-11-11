@@ -1,0 +1,71 @@
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1260px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.button {
+   border-radius: 4px;
+   letter-spacing: 0.5px;
+   /* color: #ffffff; */
+   font-weight: 700;
+   line-height: 1.25;
+   display: inline-block;
+   transition: all 0.3s;
+   max-width: 250px;
+   /* !Не дає кнопкі зменшуватись */
+   flex-shrink: 0;
+}
+.button--bg {
+   color: #ffffff;
+   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+   padding: 14px 40px;
+}
+.button--bg:hover {
+   background: linear-gradient(55.95deg, #e71d16 50%, #f75e05 100%);
+}
+.button--border {
+   padding: 13px 40px;
+   color: #f75e05;
+   border: 1px solid #ff3f3a;
+}
+.button--border:hover {
+   color: #ffffff;
+   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+@media (max-width: 681.98px) {
+   .button {
+      font-size: 14px;
+   }
+}
+
+/* ! Title */
+.block-title {
+   color: #1e212c;
+   display: flex;
+   flex-direction: column;
+   line-height: 1.5;
+}
+.subtitle {
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+}
+.title {
+   font-weight: 900;
+   font-size: 46px;
+}
