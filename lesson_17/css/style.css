@@ -45,6 +45,14 @@ body._lock {
 .menu__icon {
 	display: none;
 }
+.menu__block {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+.menu__body {
+	flex-grow: 1;
+}
 .header-block__menu {
 	display: flex;
 	align-items: center;

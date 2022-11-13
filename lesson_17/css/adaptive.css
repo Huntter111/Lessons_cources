@@ -94,7 +94,11 @@
       bottom: 50%;
       transform: rotate(45deg) translate(0px, 50%);
    }
-   .menu__body {
+   .menu__block {
+      flex-direction: column;
+      gap: 40px;
+   }
+   .menu__block {
       position: fixed;
       top: 62px;
       left: -100%;
@@ -108,25 +112,14 @@
    .menu__list {
       align-items: center;
    }
-   .header-block-actions {
-      position: fixed;
-      top: 300px;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      /* background-color: rgba(255, 64, 58, 0.3); */
-      padding: 0px 30px 30px 30px;
-      transition: left 0.6s cubic-bezier(0.58, -0.21, 0.74, 0.05) 0s;
-      overflow: auto;
-   }
-   .menu__body._active {
-      left: 0;
-   }
-   .header-block-actions._active {
+   .menu__block._active {
       left: 0;
    }
    .header-block__logo {
       z-index: 10;
+   }
+   .menu__body {
+      flex-grow: 0;
    }
    .header-block__menu::before {
       content: "";

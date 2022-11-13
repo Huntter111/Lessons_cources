@@ -36,12 +36,12 @@ if (isMobile.any()) {
 
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
-	const menuBody = document.querySelector('.menu__body');
-	const menuActions = document.querySelector('.header-block-actions');
+	const menuBody = document.querySelector('.menu__block');
+	// const menuActions = document.querySelector('.header-block-actions');
 	iconMenu.addEventListener('click', function (e) {
 		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
-		menuActions.classList.toggle('_active');
+		// menuActions.classList.toggle('_active');
 	});
 }
