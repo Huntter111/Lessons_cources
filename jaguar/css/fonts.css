@@ -1,0 +1,11 @@
+/* ! Font Open Sans 400, 600, 700, 800 */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+/* ! Font "SF Pro"  860*/
+@font-face {
+   font-family: "SF Pro";
+   src: url("../fonts/SF-Pro-Heavy.woff2") format("woff2"), url("../fonts/SF-Pro-Heavy.woff") format("woff");
+   font-display: swap;
+   font-weight: 860;
+   font-style: normal;
+}
