@@ -28,15 +28,19 @@ body._lock {
 }
 /* ! Header */
 .header {
-   /* background: linear-gradient(180deg, rgba(228, 227, 227, 0.8) 0%, rgba(224, 235, 255, 0.7) 100%),
-      rgba(52, 168, 83, 0.05); */
-   background: #ffffff;
+   background: linear-gradient(180deg, rgba(228, 227, 227, 0.8) 0%, rgba(224, 235, 255, 0.7) 100%),
+      rgba(52, 168, 83, 0.05);
+   /* background: #ffffff; */
    position: fixed;
    top: 0;
    left: 0;
    right: 0;
    width: 100%;
    z-index: 100;
+}
+.header__logo img {
+   width: 165px;
+   height: 37px;
 }
 .header__block {
    padding: 20px 0;
