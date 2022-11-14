@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 const isMobile = {
 	Android: function () {
@@ -32,8 +32,8 @@ if (isMobile.any()) {
 } else {
 	document.body.classList.add('_pc');
 }
-// Бургер
 
+// Бургер
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
 	const menuBody = document.querySelector('.menu__block');
@@ -72,5 +72,4 @@ const swiper = new Swiper('.swiper', {
 
 		disableOnInteraction: false,
 	},
-	// effect: 'fade',
 });

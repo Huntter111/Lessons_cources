@@ -12,7 +12,10 @@
    flex-shrink: 0;
 }
 .button:hover {
-   background: #2e9c5e;
+   background: rgba(225, 255, 238, 0.3);
+   /* background: transparent; */
+   outline: 1px solid #2e9c5e;
+   color: #2e9c5e;
 }
 
 .subtitle {
