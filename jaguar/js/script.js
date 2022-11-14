@@ -44,24 +44,33 @@ if (iconMenu) {
 	});
 }
 
+// ? Swiper
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
 
 	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	},
+	// pagination: {
+	// 	el: '.swiper-pagination',
+	// },
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.slider-button--next',
+		prevEl: '.slider-button--prev',
 	},
 
 	// And if we need scrollbar
 	scrollbar: {
 		el: '.swiper-scrollbar',
 	},
+	autoplay: {
+		dalay: 2000,
+
+		stopOmLastSlide: true,
+
+		disableOnInteraction: false,
+	},
+	// effect: 'fade',
 });

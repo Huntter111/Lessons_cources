@@ -12,8 +12,6 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<title>Jaguar Land Rover</title>
 	</head>
 
@@ -121,16 +119,15 @@
 								>
 							</div>
 							<!-- /.detalied-block__body -->
-							<video
-								src="https://www.youtube.com/embed/NEhsQ5lwHX8"></video>
+
 							<div class="detalied-block__video">
-								<!-- <iframe
+								<iframe
 									style="border-radius: 10px"
 									src="https://www.youtube.com/embed/NEhsQ5lwHX8"
 									title="YouTube video player"
 									frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe> -->
+									allowfullscreen></iframe>
 							</div>
 							<!-- /.detalied-block__video -->
 						</div>
@@ -239,29 +236,38 @@
 						<h2 class="like-block__title">
 							Що подобається нашим працівникам?
 						</h2>
-						<div class="swiper">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide">Slide 1</div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								...
-							</div>
-							<!-- If we need pagination -->
-							<!-- <div class="swiper-pagination"></div> -->
-
-							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev">
-								<div class="arrov-left">
-									<img src="img/what-like/icons/right.svg" alt="" />
+						<div class="slider">
+							<div class="swiper">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="img/what-like/1_UA.png" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/2_UA.png" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/3_UA.png" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/4_UA.png" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/5_UA.png" alt="" />
+									</div>
 								</div>
 							</div>
-							<div class="swiper-button-next">
-								<div class="arrov-right"></div>
+							<!-- ./swiper-container-->
+
+							<div class="slider__buttons">
+								<!-- If we need navigation buttons -->
+								<div class="slider-button slider-button--prev"></div>
+								<div class="slider-button slider-button--next"></div>
 							</div>
+							<!-- /.slider__buttons -->
 						</div>
-						<!-- ./Swiper -->
+						<!-- /.slider -->
 					</div>
 					<!-- /.like-block__container -->
 				</section>
@@ -273,6 +279,7 @@
 			<!-- /.footer -->
 		</div>
 		<!-- /.wrapper -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
