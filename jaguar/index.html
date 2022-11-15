@@ -12,6 +12,13 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css" />
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.min.js"></script>
 		<title>Jaguar Land Rover</title>
 	</head>
 
@@ -21,7 +28,12 @@
 				<div class="header__container">
 					<div class="header__block">
 						<div class="header__logo">
-							<a href="#"><img src="img/jlr-logo.png" alt="Logo" /></a>
+							<a href="#"
+								><img
+									class="header__image"
+									src="img/jlr-logo.png"
+									alt="Logo"
+							/></a>
 						</div>
 						<div class="header__menu menu">
 							<div class="menu__icon">
@@ -32,21 +44,23 @@
 								<nav class="menu__body">
 									<ul class="menu__list">
 										<li class="menu__item">
-											<a href="#" class="menu__link"
+											<a href="#forms" class="menu__link"
 												>Залишити заявку!</a
 											>
 										</li>
 										<li class="menu__item">
-											<a href="#" class="menu__link"
+											<a href="#why-work" class="menu__link"
 												>Чому працювати на Jaguar?
 											</a>
 										</li>
 										<li class="menu__item">
-											<a href="#" class="menu__link">Опис роботи</a>
+											<a href="#job" class="menu__link"
+												>Опис роботи</a
+											>
 										</li>
 									</ul>
 								</nav>
-								<a href="#" class="button menu__button"
+								<a href="#forms" class="button menu__button"
 									>Хочу працювати</a
 								>
 							</div>
@@ -70,7 +84,7 @@
 										<span>Land Rover</span>
 									</h1>
 									<div class="block-main__actions">
-										<a href="#" class="button block-main__button"
+										<a href="#forms" class="button block-main__button"
 											>Хочу працювати</a
 										>
 										<a
@@ -112,7 +126,7 @@
 									Пропонуємо роботу на повну зайнятість з оформленням
 									напряму у компанії Jaguar Land Rover Slovakia.
 								</p>
-								<a href="#" class="button detalied-block__button"
+								<a href="#forms" class="button detalied-block__button"
 									>Хочу працювати</a
 								>
 							</div>
@@ -135,7 +149,7 @@
 					<!-- /.detalied-description__container -->
 				</section>
 				<!-- /.detalied-description -->
-				<section class="benefits-block">
+				<section class="benefits-block" id="why-work">
 					<div class="benefits-block__container">
 						<h2 class="benefits-block__subtitle subtitle">
 							Переваги вакансії
@@ -274,7 +288,7 @@
 					<!-- /.like-block__container -->
 				</section>
 				<!-- /.like-block -->
-				<section class="description-job">
+				<section class="description-job" id="job">
 					<div class="description-job__container">
 						<h2 class="description-job__subtitle subtitle">
 							Опис роботи
@@ -337,7 +351,7 @@
 										трудовим законодавством.
 									</li>
 									<li class="list-job__item">
-										100% покри ття страхування життя та від нещасних
+										100% покриття страхування життя та від нещасних
 										випадків, додаткові внески роботодавця у пенсійне
 										накопичення
 									</li>
@@ -363,8 +377,6 @@
 				</section>
 
 				<section class="map">
-					<div class="map__background"></div>
-					<!-- /.map__block -->
 					<div class="map__container">
 						<div class="map__body">
 							<div class="map__title">Місце виконання робіт</div>
@@ -474,6 +486,94 @@
 					<!-- /.vacancies__container -->
 				</section>
 				<!-- /.open-vacancies -->
+				<section class="forms" id="forms">
+					<div class="forms__container">
+						<h2 class="forms__subtitle subtitle">
+							Залишайте заявку і ми передзвонимо Вам
+						</h2>
+						<h2 class="forms__subtitle forms__subtitle--green subtitle">
+							Для реєстрації на роботу:
+						</h2>
+						<div class="forms__block">
+							<form
+								class="g-form"
+								id="g-form-1"
+								method="POST"
+								action=""
+								autocomplete="off">
+								<h2
+									class="g-form__title g-form__title--main forms__subtitle subtitle"></h2>
+
+								<div class="g-form__preloader"></div>
+								<div class="g-form__inputs">
+									<fieldset class="g-form__input-wrapper form__line">
+										<label class="form__label" for="example-name"
+											>Введіть ім'я</label
+										>
+										<input
+											type="text"
+											class="g-form__input g-form__input_name form__input"
+											id="name"
+											name="Ім'я"
+											placeholder="Наприкалад: Артем"
+											required />
+									</fieldset>
+
+									<fieldset class="g-form__input-wrapper form__line">
+										<label
+											class="form__label"
+											for="example-phone-nuber"
+											>Введіть ваш телефон</label
+										>
+										<input
+											type="tel"
+											class="g-form__input g-form__input_tel form__input"
+											id="tel"
+											name="Телефон"
+											required
+											placeholder="+380 XX XXX XX XX" />
+									</fieldset>
+
+									<fieldset class="g-form__input-wrapper form__line">
+										<label class="form__label" for="example-email"
+											>Введіть ваш email</label
+										>
+										<input
+											class="form__input"
+											id="email"
+											name="Email"
+											type="email"
+											value=""
+											required
+											placeholder="Наприклад, ivan@gmail.com" />
+									</fieldset>
+									<!-- !Допопмагає боротися зі спамом -->
+									<fieldset
+										class="g-form__input-wrapper g-form__input-wrapper_hidden">
+										<label for="honeypot"></label>
+										<input
+											id="honeypot"
+											type="text"
+											name="honeypot"
+											value="" />
+									</fieldset>
+									<!-- !Допопмагає боротися зі спамом -->
+									<div class="g-form__button-wrapper">
+										<button
+											class="g-form__button button form__button">
+											НАДІСЛАТИ
+										</button>
+										<h2
+											class="g-form__title g-form__title--respond"></h2>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- /.forms__block -->
+					</div>
+					<!-- /.forms__container -->
+				</section>
+				<!-- /.forms -->
 			</main>
 			<!-- /.page -->
 
@@ -495,8 +595,10 @@
 			<!-- /.footer -->
 		</div>
 		<!-- /.wrapper -->
-		<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="/g-form/g-form.js"></script>
+		<script src="js/form.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
