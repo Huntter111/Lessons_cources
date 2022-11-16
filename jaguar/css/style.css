@@ -171,10 +171,10 @@ body._lock {
 	border-radius: 50%;
 	border: 1px solid rgba(46, 139, 87, 0.4);
 	background: url('../img/main-block/icons/play.svg') center no-repeat;
-	transition: background-color 0.3s ease;
+	transition: all 0.3s ease;
 }
-.block-main__link:hover::after {
-	animation-play-state: paused;
+.block-main__link:hover::before {
+	transform: scale(1.1);
 }
 @keyframes pulse {
 	0% {
@@ -584,15 +584,16 @@ body._lock {
 /* ! Forms */
 .forms {
 	padding: 50px 0 100px 0;
-	background-color: #ffffff;
 }
-
 .forms__subtitle--green {
 	color: #2e8b57;
 	margin-bottom: 40px;
 }
 
 .forms__block {
+	padding: 50px;
+	background-color: #ffffff;
+	border-radius: 10px;
 	max-width: 680px;
 	margin: 0 auto;
 }
@@ -633,6 +634,9 @@ body._lock {
 	width: 100%;
 	font-weight: 600;
 	font-size: 22px;
+}
+.g-recaptcha {
+	margin-bottom: 20px;
 }
 .form__button:not(:last-child) {
 	margin-bottom: 15px;

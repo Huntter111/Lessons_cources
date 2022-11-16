@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/components.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/adaptive.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css" />
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.min.js"></script>
+		<script
+			src="https://www.google.com/recaptcha/api.js"
+			async
+			defer></script>
+		<title>Jaguar Land Rover</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__block">
+						<div class="header__logo">
+							<a href="#"
+								><img
+									class="header__image"
+									src="img/jlr-logo.png"
+									alt="Logo"
+							/></a>
+						</div>
+						<div class="header__menu menu">
+							<div class="menu__icon">
+								<span></span>
+							</div>
+							<!-- /.menu__icon -->
+							<div class="menu__block">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#forms" class="menu__link"
+												>Залишити заявку!</a
+											>
+										</li>
+										<li class="menu__item">
+											<a href="#why-work" class="menu__link"
+												>Чому працювати на Jaguar?
+											</a>
+										</li>
+										<li class="menu__item">
+											<a href="#job" class="menu__link"
+												>Опис роботи</a
+											>
+										</li>
+									</ul>
+								</nav>
+								<a href="#forms" class="button menu__button"
+									>Хочу працювати</a
+								>
+							</div>
+							<!-- /.menu__block -->
+						</div>
+						<!-- /.header__menu -->
+					</div>
+					<!-- /.header__block -->
+				</div>
+				<!-- /.header__container -->
+			</header>
+			<!-- /.header -->
+			<main class="page">
+				<section class="page__main">
+					<div class="main-block">
+						<div class="main-block__container">
+							<div class="block-main page__block">
+								<div class="block-main__body">
+									<h1 class="block-main__title">
+										Робота в Словаччині на Jaguar
+										<span>Land Rover</span>
+									</h1>
+									<div class="block-main__actions">
+										<a href="#forms" class="button block-main__button"
+											>Хочу працювати</a
+										>
+										<a
+											class="block-main__link"
+											href="https://www.youtube.com/watch?v=NEhsQ5lwHX8"
+											target="_blank"
+											>Дивитись відео</a
+										>
+									</div>
+									<!-- /.block-main__actions -->
+								</div>
+								<!-- /.main-block__body -->
+								<div class="block-main__image">
+									<img
+										src="img/main-block/image-1.webp"
+										alt="Image: main-picture" />
+								</div>
+								<!-- /.block-main__image -->
+							</div>
+							<!-- /.block-main -->
+							<div class="line"></div>
+							<!-- /.line -->
+						</div>
+						<!-- /.main-block__container -->
+					</div>
+					<!-- /.main-block -->
+				</section>
+				<!-- /.page__main -->
+				<section class="detalied-description">
+					<div class="detalied-description__container">
+						<div class="detalied-block detalied-description__block">
+							<div class="detalied-block__body">
+								<h2 class="detalied-block__title">
+									Робота в Словаччині на виробничій лінії, де
+									виробництво відбувається відповідно високих
+									стандартів якості та точно визначених процесів.
+								</h2>
+								<p class="detalied-block__subtitle">
+									Пропонуємо роботу на повну зайнятість з оформленням
+									напряму у компанії Jaguar Land Rover Slovakia.
+								</p>
+								<a href="#forms" class="button detalied-block__button"
+									>Хочу працювати</a
+								>
+							</div>
+							<!-- /.detalied-block__body -->
+
+							<div class="detalied-block__video">
+								<iframe
+									style="border-radius: 10px"
+									src="https://www.youtube.com/embed/NEhsQ5lwHX8"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+							</div>
+							<!-- /.detalied-block__video -->
+						</div>
+						<!-- /.detalied-block -->
+						<div class="line"></div>
+					</div>
+					<!-- /.detalied-description__container -->
+				</section>
+				<!-- /.detalied-description -->
+				<section class="benefits-block" id="why-work">
+					<div class="benefits-block__container">
+						<h2 class="benefits-block__subtitle subtitle">
+							Переваги вакансії
+						</h2>
+						<div class="benefits benefits__block">
+							<div class="benefits__item">
+								<div class="benefits__icon">
+									<img
+										src="img/benefits/icons/hand.svg"
+										alt="icon: hand" />
+								</div>
+								<div class="benefits__title">
+									Договір на невизначений термін
+								</div>
+								<div class="benefits__text">
+									Одразу стаєте нашим співробітником. Пропонований
+									пакет оплати включає основну фіксовану заробітну
+									плату, надбавку, 13-та зарплата
+								</div>
+							</div>
+							<!-- /.benefits__item -->
+							<div class="benefits__item">
+								<div class="benefits__icon">
+									<img
+										src="img/benefits/icons/cook.svg"
+										alt="icon: cook" />
+								</div>
+								<div class="benefits__title">Харчування лише 1€</div>
+								<div class="benefits__text">
+									Під час перерви ви можете відпочити, або
+									підкріпитися.
+								</div>
+							</div>
+							<!-- /.benefits__item -->
+							<div class="benefits__item">
+								<div class="benefits__icon">
+									<img
+										src="img/benefits/icons/euro.svg"
+										alt="icon: euro" />
+								</div>
+								<div class="benefits__title">Премія</div>
+								<div class="benefits__text">
+									Розмір оплати надурочної роботи вищий, ніж
+									передбачено законом.
+								</div>
+							</div>
+							<!-- /.benefits__item -->
+							<div class="benefits__item">
+								<div class="benefits__icon">
+									<img
+										src="img/benefits/icons/bus.svg"
+										alt="icon: bus" />
+								</div>
+								<div class="benefits__title">Автобус</div>
+								<div class="benefits__text">
+									На місце роботи є можливість дістатись нашим
+									автобусним транспортом, який курсує різними
+									маршрутами з навшколишніх міст і сіл.
+								</div>
+							</div>
+							<!-- /.benefits__item -->
+							<div class="benefits__item">
+								<div class="benefits__icon">
+									<img
+										src="img/benefits/icons/sleap.svg"
+										alt="icon: sleap" />
+								</div>
+								<div class="benefits__title">Відпочинок</div>
+								<div class="benefits__text">
+									Якщо ви проживаєте на відстані більше ніж 70
+									кілометрів від Нітра, ви можете скористатись
+									варіантами дешевого проживання біля заводу із зручним
+									і безкоштовним транспортом до місця роботи.
+								</div>
+							</div>
+							<!-- /.benefits__item -->
+							<div class="benefits__item">
+								<div class="benefits__icon">
+									<img
+										src="img/benefits/icons/book.svg"
+										alt="icon: book" />
+								</div>
+								<div class="benefits__title">Освіта</div>
+								<div class="benefits__text">
+									Для нас важливий ваш розвиток, тому ми пропонуємо
+									освітні програми для навчання та кар’єрного росту.
+								</div>
+							</div>
+							<!-- /.benefits__item -->
+						</div>
+						<!-- /.benefits -->
+						<div class="line benefits__line"></div>
+					</div>
+					<!-- /.benefits-block__container -->
+				</section>
+				<!-- /.benefits-block -->
+				<section class="like-block">
+					<div class="like-block__container">
+						<h2 class="like-block__title">
+							Що подобається нашим працівникам?
+						</h2>
+						<div class="slider slider__block">
+							<div class="swiper">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="img/what-like/1_UA.webp" alt="Image: people" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/2_UA.webp" alt="Image: people" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/3_UA.webp" alt="Image: people" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/4_UA.webp" alt="Image: people" />
+									</div>
+									<div class="swiper-slide">
+										<img src="img/what-like/5_UA.webp" alt="Image: people" />
+									</div>
+								</div>
+							</div>
+							<!-- ./swiper-container-->
+
+							<div class="slider__buttons">
+								<!-- If we need navigation buttons -->
+								<div class="slider-button slider-button--prev"></div>
+								<div class="slider-button slider-button--next"></div>
+							</div>
+							<!-- /.slider__buttons -->
+						</div>
+						<!-- /.slider -->
+						<div class="line"></div>
+					</div>
+					<!-- /.like-block__container -->
+				</section>
+				<!-- /.like-block -->
+				<section class="description-job" id="job">
+					<div class="description-job__container">
+						<h2 class="description-job__subtitle subtitle">
+							Опис роботи
+						</h2>
+						<div class="description-job__name">
+							Оператор/ка виробництва
+						</div>
+						<div class="job job__description">
+							<div class="job__item">
+								<div class="job__subtitle job__subtitle--icon-1">
+									ПОЧАТКОВА ЗАРОБІТНА ПЛАТА&nbsp;: <span>1276€*</span>
+								</div>
+								<ul class="job__list list-job list-job--1">
+									<li class="list-job__item">
+										Включає гарантовану тарифну заробітну плату в
+										розмірі 1160 євро
+									</li>
+									<li class="list-job__item">
+										Бонус за відвідуваність до 10% (максимум 116 євро)
+									</li>
+									<li class="list-job__item">
+										Ми гарантуємо підвищення заробітної плати під час
+										наступних 6 років
+									</li>
+								</ul>
+								<div class="job__warning">
+									* усі суми в євро наведені до утримання податів та
+									зборів
+								</div>
+							</div>
+							<!-- /.job__item -->
+							<div class="job__item">
+								<div class="job__image">
+									<img src="img/job/image-1.webp" alt="image: work" />
+								</div>
+								<!-- /.job__image -->
+							</div>
+							<!-- /.job__item -->
+							<div class="job__item">
+								<div class="job__subtitle job__subtitle--icon-2">
+									ШИРОКИЙ СПЕКТР ПЕРЕВАГ
+								</div>
+								<ul class="job__list list-job list-job--2">
+									<li class="list-job__item">
+										Безкоштовний автобусний транспорт або грошова
+										надбавка на транспорт
+									</li>
+									<li class="list-job__item">
+										Харчування лише за 1 євро
+									</li>
+									<li class="list-job__item">
+										400 євро на рік у вигляді бонусів за вашим вибором
+									</li>
+									<li class="list-job__item">
+										До 150 євро допомоги на відпочинок та навчання
+									</li>
+									<li class="list-job__item">
+										Підвищені надбавки за понаднормову роботу у
+										вихідні дні, у порівнянні з тим, що передбачено
+										трудовим законодавством.
+									</li>
+									<li class="list-job__item">
+										100% покриття страхування життя та від нещасних
+										випадків, додаткові внески роботодавця у пенсійне
+										накопичення
+									</li>
+									<li class="list-job__item">
+										Iнші переваги офіціного працевлаштування, про які
+										дізнаєтесь після реєстрації
+									</li>
+								</ul>
+							</div>
+							<!-- /.job__item -->
+							<div class="job__item">
+								<div class="job__image">
+									<img src="img/job/image-2.webp" alt="image: work" />
+								</div>
+								<!-- /.job__image -->
+							</div>
+							<!-- /.job__item -->
+						</div>
+						<!-- /.job -->
+						<div class="line"></div>
+					</div>
+					<!-- /.description-job__container -->
+				</section>
+
+				<section class="map">
+					<div class="map__container">
+						<div class="map__body">
+							<div class="map__title">Місце виконання робіт</div>
+							<div class="map__subtitle">місто Нітра</div>
+							<div class="map__text">
+								забезпечуємо навчання, підтримку наших працівників, щоб
+								ви знайшли роботу, якою будете пишатися
+							</div>
+						</div>
+						<!-- /.map__body -->
+					</div>
+					<!-- /.map__container -->
+				</section>
+				<!-- /.map -->
+				<section class="vacancies">
+					<div class="vacancies__container">
+						<h2 class="vacancies__subtitle subtitle">
+							Також в нас є інші відкриті вакансії:
+						</h2>
+						<!-- /.vacancies__title -->
+						<div class="vacacies__grid grid-vacancies">
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-1.svg"
+										alt="icon: tex" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">
+									Працівник технічного обслуговування у кузовному
+									відділі
+								</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-2.svg"
+										alt="icon: tecnician" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">
+									Виправних дефектів у кузовному відділі
+								</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-3.svg"
+										alt="icon: tecnician" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">
+									Працівник технічного обслуговування у монтажному
+									відділі
+								</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-4.svg"
+										alt="icon: tecnician" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">Автоелектрик</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-5.svg"
+										alt="icon: tecnician" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">Автомеханік</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-6.svg"
+										alt="icon: tecnician" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">
+									Виправних дефектів у фарбувальному відділі
+								</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+							<div class="grid-vacancies__item">
+								<div class="grid-vacancies__icon">
+									<img
+										src="img/vacancies/icons/icon-7.svg"
+										alt="icon: tecnician" />
+								</div>
+								<div class="grid-vacancies__line"></div>
+								<div class="grid-vacancies__title">
+									Технік з’єднання
+								</div>
+							</div>
+							<!-- /.grid-vacancies__item -->
+						</div>
+						<!-- /.vacacies__grid -->
+					</div>
+					<!-- /.vacancies__container -->
+				</section>
+				<!-- /.open-vacancies -->
+				<section class="forms" id="forms">
+					<div class="forms__container">
+						<h2 class="forms__subtitle subtitle">
+							Залишайте заявку і ми передзвонимо Вам
+						</h2>
+						<h2 class="forms__subtitle forms__subtitle--green subtitle">
+							Для реєстрації на роботу:
+						</h2>
+						<div class="forms__block">
+							<form
+								class="g-form"
+								id="g-form-1"
+								method="POST"
+								action=""
+								autocomplete="off">
+								<h2
+									class="g-form__title g-form__title--main forms__subtitle subtitle"></h2>
+
+								<div class="g-form__preloader"></div>
+								<div class="g-form__inputs">
+									<fieldset class="g-form__input-wrapper form__line">
+										<label class="form__label" for="example-name"
+											>Ім'я*</label
+										>
+										<input
+											type="text"
+											class="g-form__input g-form__input_name form__input"
+											id="name"
+											name="Ім'я"
+											placeholder="Наприкалад: Артем"
+											required />
+									</fieldset>
+
+									<fieldset class="g-form__input-wrapper form__line">
+										<label
+											class="form__label"
+											for="example-phone-nuber"
+											>Номер телефону*</label
+										>
+										<input
+											type="tel"
+											class="g-form__input g-form__input_tel form__input"
+											id="tel"
+											name="Телефон"
+											required
+											placeholder="+380 XX XXX XX XX" />
+									</fieldset>
+
+									<fieldset class="g-form__input-wrapper form__line">
+										<label class="form__label" for="example-email"
+											>Ваш Email*</label
+										>
+										<input
+											class="form__input"
+											id="email"
+											name="Email"
+											type="email"
+											value=""
+											required
+											placeholder="Наприклад, ivan@gmail.com" />
+									</fieldset>
+									<!-- !Допопмагає боротися зі спамом -->
+									<fieldset
+										class="g-form__input-wrapper g-form__input-wrapper_hidden">
+										<label for="honeypot"></label>
+										<input
+											id="honeypot"
+											type="text"
+											name="honeypot"
+											value="" />
+									</fieldset>
+									<!-- !Допопмагає боротися зі спамом -->
+									<div
+										class="g-recaptcha"
+										data-sitekey="6LfbwQ4jAAAAAHjue30wOsuZoNLjlln_ahimDZi0"></div>
+										<div class="text-danger" id="recaptchaError" ></div>
+									<div class="g-form__button-wrapper">
+										<button
+											data-callback="onSubmit"
+											class="g-form__button button form__button">
+											НАДІСЛАТИ
+										</button>
+										<h2
+											class="g-form__title g-form__title--respond"></h2>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- /.forms__block -->
+					</div>
+					<!-- /.forms__container -->
+				</section>
+				<!-- /.forms -->
+			</main>
+			<!-- /.page -->
+
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__image">
+						<img src="img/jlr-logo.png" alt="logo-footer" />
+					</div>
+					<!-- /.footer__image -->
+					<a
+						href="mailto:nabir@robotajaguarlandrover.com.ua"
+						class="footer__link"
+						target="_blank"
+						>nabir@robotajaguarlandrover.com.ua</a
+					>
+				</div>
+				<!-- /.footer__container -->
+			</footer>
+			<!-- /.footer -->
+		</div>
+		<!-- /.wrapper -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="/g-form/g-form.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

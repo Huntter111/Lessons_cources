@@ -89,7 +89,7 @@ $(
 							});
 
 							submitButton.prop('disabled', false);
-						}, 5000);
+						}, 2000);
 
 						console.log('Гугл не ответил статусом 200');
 					}
@@ -115,9 +115,31 @@ $(
 					}, 5000);
 
 					console.log(
-						'Не удалось выполнить запрос по указанному в скрипте пути',
+						'Не вдалось виконати запит за вказаним шляхом скрипту',
 					);
 				});
+			event.preventDefault();
+			let captcha = grecaptcha.getResponse();
+
+			if (!captcha.length) {
+				$('#recaptchaError').text('* Ви не пройшли перевірку капчі');
+			} else {
+				$('#recaptchaError').text('');
+
+				let dataForm = $(this).serialize();
+
+				$.ajax({
+					url: '/form.php',
+					method: 'post',
+					dataType: 'html',
+					data: dataForm,
+					success: function (data) {
+						console.log(data);
+
+						grecaptcha.reset();
+					},
+				});
+			}
 		});
 	})(jQuery),
 );
@@ -145,3 +167,30 @@ function processInput(phone) {
 		if (!iti.isValidNumber()) phone.setCustomValidity('Невірний номер');
 	});
 }
+
+// $(document).ready(function () {
+// 	$('#g-form-1').on('submit', function (event) {
+// 		event.preventDefault();
+// 		let captcha = grecaptcha.getResponse();
+
+// 		if (!captcha.length) {
+// 			$('#recaptchaError').text('* Ви не пройшли перевірку капчі');
+// 		} else {
+// 			$('#recaptchaError').text('');
+
+// 			let dataForm = $(this).serialize();
+
+// 			$.ajax({
+// 				url: '/form.php',
+// 				method: 'post',
+// 				dataType: 'html',
+// 				data: dataForm,
+// 				success: function (data) {
+// 					console.log(data);
+
+// 					grecaptcha.reset();
+// 				},
+// 			});
+// 		}
+// 	});
+// });
