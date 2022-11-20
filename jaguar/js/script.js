@@ -32,7 +32,6 @@ if (isMobile.any()) {
 } else {
 	document.body.classList.add('_pc');
 }
-
 // Бургер
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
@@ -41,6 +40,20 @@ if (iconMenu) {
 		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
+	});
+	const menuLink = document.getElementsByClassName('menu__link');
+	for (let i = 0; i < menuLink.length; i++) {
+		menuLink[i].onclick = function () {
+			document.body.classList.remove('_lock');
+			iconMenu.classList.remove('_active');
+			menuBody.classList.remove('_active');
+		};
+	}
+	const menuButton = document.querySelector('.menu__button');
+	menuButton.addEventListener('click', function (e) {
+		document.body.classList.remove('_lock');
+		iconMenu.classList.remove('_active');
+		menuBody.classList.remove('_active');
 	});
 }
 

@@ -551,7 +551,12 @@
 											required
 											placeholder="Наприклад, ivan@gmail.com" />
 									</fieldset>
-									<!-- !Допопмагає боротися зі спамом -->
+									
+									<div
+										class="g-recaptcha"
+										data-sitekey="6LfbwQ4jAAAAAHjue30wOsuZoNLjlln_ahimDZi0"></div>
+										<div class="text-danger" id="recaptchaError" ></div>
+										<!-- !Допопмагає боротися зі спамом -->
 									<fieldset
 										class="g-form__input-wrapper g-form__input-wrapper_hidden">
 										<label for="honeypot"></label>
@@ -562,10 +567,6 @@
 											value="" />
 									</fieldset>
 									<!-- !Допопмагає боротися зі спамом -->
-									<div
-										class="g-recaptcha"
-										data-sitekey="6LfbwQ4jAAAAAHjue30wOsuZoNLjlln_ahimDZi0"></div>
-										<div class="text-danger" id="recaptchaError" ></div>
 									<div class="g-form__button-wrapper">
 										<button
 											data-callback="onSubmit"

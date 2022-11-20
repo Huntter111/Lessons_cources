@@ -65,22 +65,6 @@ $(
 				$('#recaptchaError').text('* Ви не пройшли перевірку капчі');
 			} else {
 				$('#recaptchaError').text('');
-
-				let dataForm = $(this).serialize();
-
-				$.ajax({
-					url: '/form.php',
-					method: 'post',
-					dataType: 'html',
-					data: dataForm,
-					success: function (data) {
-						console.log(data);
-
-						grecaptcha.reset();
-					},
-				});
-			}
-			if (!captcha.length) {
 				$.ajax({
 					url: appLink,
 					type: 'POST',
@@ -166,6 +150,19 @@ $(
 							'Не вдалось виконати запит за вказаним шляхом скрипту',
 						);
 					});
+				// let dataForm = $(this).serialize();
+
+				// $.ajax({
+				// 	url: '/form.php',
+				// 	method: 'post',
+				// 	dataType: 'html',
+				// 	data: dataForm,
+				// 	success: function (data) {
+				// 		console.log(data);
+
+				// 		grecaptcha.reset();
+				// 	},
+				// });
 			}
 		});
 	})(jQuery),
