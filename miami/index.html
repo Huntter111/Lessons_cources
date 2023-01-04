@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230104154631">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230104225307">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div data-scroll class="wrapper">
-		<header data-lp data-scroll="120" data-scroll-show="1000" class="header header-menu">
+		<header data-lp data-scroll="320" data-scroll-show="1000" class="header header-menu">
 			<div class="header__container">
 				<div class="header__menu menu">
 					<button type="button" class="icon-menu"><span></span></button>
@@ -48,7 +48,9 @@
 				</div>
 				<!-- /.main-page__container -->
 			</section>
-			<section class="miami-best">
+			<!-- data-watch-once  
+				data-watch data-watch-threshold="0.3"-->
+			<section class="page__miami miami-best">
 				<div class="miami-best__container">
 					<h2 class="miami-best__title">Miami best Real estate <span>here</span></h2>
 					<div class="miami-best__text text-miami">
@@ -79,7 +81,7 @@
 						<h2 class="title">Gallery</h2>
 					</div>
 					<div class="gallery-grid grid">
-						<div class="grid__body grid__body--first">
+						<div data-watch data-watch-threshold="0.3" class="grid__body grid__body--first">
 							<div class="grid__image-ibg">
 								<picture><source srcset="img/gallery/01.webp" type="image/webp"><img src="img/gallery/01.jpg" alt="image" /></picture>
 							</div>
@@ -91,7 +93,7 @@
 							<a href="#" class="grid__link">Marina Palms</a>
 							/ North Miami Beach, FL 33162
 						</div>
-						<div class="grid__body grid__body--second">
+						<div data-watch data-watch-threshold="0.3" class="grid__body grid__body--second">
 							<div class="grid__image-ibg">
 								<picture><source srcset="img/gallery/03.webp" type="image/webp"><img src="img/gallery/03.jpg" alt="image" /></picture>
 							</div>
@@ -103,7 +105,7 @@
 							<a href="#" class="grid__link">Edition Residens</a>
 							/ Miami Beach, FL 33139
 						</div>
-						<div class="grid__body grid__body--third">
+						<div data-watch data-watch-threshold="0.3" class="grid__body grid__body--third">
 							<div class="grid__image-ibg">
 								<picture><source srcset="img/gallery/05.webp" type="image/webp"><img src="img/gallery/05.jpg" alt="image" /></picture>
 							</div>
@@ -115,7 +117,7 @@
 							<a href="#" class="grid__link">Faena House</a>
 							/ Miami Beach, FL 33140
 						</div>
-						<div class="grid__button">
+						<div data-ripple class="grid__button">
 							<a href="#" class="button button-secondary">View all</a>
 						</div>
 					</div>
@@ -127,8 +129,8 @@
 						<h2 class="title">Testimonials</h2>
 					</div>
 
-					<div class="testimonials__grid cards-grid">
-						<article class="cards-grid__card card">
+					<div data-watch data-watch-threshold="0.3" class="testimonials__grid cards-grid">
+						<article data-watch data-watch-threshold="0.1" class="cards-grid__card card card--first">
 							<div class="card__image">
 								<picture><source srcset="img/testimonials/01.webp" type="image/webp"><img src="img/testimonials/01.png" alt="image" /></picture>
 							</div>
@@ -138,7 +140,7 @@
 								<p class="card__text">Nice work, Certificates National Association of Realtors (USA)</p>
 							</div>
 						</article>
-						<article class="cards-grid__card card">
+						<article data-watch data-watch-threshold="0.2" class="cards-grid__card card card--second">
 							<div class="card__image">
 								<picture><source srcset="img/testimonials/02.webp" type="image/webp"><img src="img/testimonials/02.png" alt="image" /></picture>
 							</div>
@@ -151,7 +153,7 @@
 								</p>
 							</div>
 						</article>
-						<article class="cards-grid__card card">
+						<article data-watch data-watch-threshold="0.3" class="cards-grid__card card card--third">
 							<div class="card__image">
 								<picture><source srcset="img/testimonials/03.webp" type="image/webp"><img src="img/testimonials/03.png" alt="image" /></picture>
 							</div>
@@ -171,9 +173,9 @@
 					<div class="contact-us__title">
 						<h2 class="title">Contact us</h2>
 					</div>
-					<div class="contact-us__body">
+					<div data-watch data-watch-threshold="0.3" class="contact-us__body">
 						<div class="contact-us__info info-contact">
-							<div class="info-contact__column">
+							<div class="info-contact__column@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);">
 								<div class="info-contact__name">Phone</div>
 								<a href="tel:+1 234 5555-55-55" class="info-contact__phone">+1 234 5555-55-55</a>
 								<div class="info-contact__name">Email</div>
@@ -208,7 +210,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230104154631"></script>
+	<script src="js/app.min.js?_v=20230104225307"></script>
 </body>
 
 </html>
