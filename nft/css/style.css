@@ -443,18 +443,6 @@ textarea.input {
           column-gap: 1.875rem;
 }
 
-.footer__column:nth-child(4) {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-}
-
-.footer__column:nth-child(1) {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-}
-
 .footer__title {
   font-family: "Monument Extended";
   font-size: 1.125rem;
@@ -1951,6 +1939,14 @@ button.swiper-pagination-bullet {
     margin-bottom: 4.5rem;
   }
 
+  .cta {
+    padding-top: 7.5rem;
+  }
+
+  .cta {
+    padding-bottom: 7.5rem;
+  }
+
   .cta__text {
     font-size: 1.875rem;
   }
@@ -2107,6 +2103,14 @@ button.swiper-pagination-bullet {
     margin-bottom: 1.5rem;
   }
 
+  .cta {
+    padding-top: 5rem;
+  }
+
+  .cta {
+    padding-bottom: 5rem;
+  }
+
   .cta__text {
     font-size: 1.3125rem;
   }
@@ -2128,6 +2132,20 @@ button.swiper-pagination-bullet {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.875rem;
+  }
+}
+
+@media (max-width: 61.9375em) {
+  .footer__column:nth-child(4) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .footer__column:nth-child(1) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
@@ -2283,6 +2301,8 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -2304,11 +2324,11 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 47.9375em) {
   .cta__body {
-    padding-top: 5rem;
+    padding-top: 3.125rem;
   }
 
   .cta__body {
-    padding-bottom: 5rem;
+    padding-bottom: 3.125rem;
   }
 }
 
@@ -2698,6 +2718,30 @@ button.swiper-pagination-bullet {
     }
 }
 
+@supports (padding-top: clamp( 5rem , 4.3984962406rem  +  3.007518797vw , 7.5rem )) {
+    .cta {
+      padding-top: clamp( 5rem , 4.3984962406rem  +  3.007518797vw , 7.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 5rem , 4.3984962406rem  +  3.007518797vw , 7.5rem )) {
+    .cta {
+      padding-top: calc(5rem + 2.5 * (100vw - 20rem) / 83.125);
+    }
+}
+
+@supports (padding-bottom: clamp( 5rem , 4.3984962406rem  +  3.007518797vw , 7.5rem )) {
+    .cta {
+      padding-bottom: clamp( 5rem , 4.3984962406rem  +  3.007518797vw , 7.5rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 5rem , 4.3984962406rem  +  3.007518797vw , 7.5rem )) {
+    .cta {
+      padding-bottom: calc(5rem + 2.5 * (100vw - 20rem) / 83.125);
+    }
+}
+
 @supports (font-size: clamp( 1.3125rem , 1.1771616541rem  +  0.6766917293vw , 1.875rem )) {
     .cta__text {
       font-size: clamp( 1.3125rem , 1.1771616541rem  +  0.6766917293vw , 1.875rem );
@@ -2774,27 +2818,27 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 47.9375em) and (max-width: 61.9375em) {
-@supports (padding-top: clamp( 5rem , 1.5758928571rem  +  7.1428571429vw , 6rem )) {
+@supports (padding-top: clamp( 3.125rem , -6.7193080357rem  +  20.5357142857vw , 6rem )) {
     .cta__body {
-      padding-top: clamp( 5rem , 1.5758928571rem  +  7.1428571429vw , 6rem );
+      padding-top: clamp( 3.125rem , -6.7193080357rem  +  20.5357142857vw , 6rem );
     }
 }
 
-@supports not (padding-top: clamp( 5rem , 1.5758928571rem  +  7.1428571429vw , 6rem )) {
+@supports not (padding-top: clamp( 3.125rem , -6.7193080357rem  +  20.5357142857vw , 6rem )) {
     .cta__body {
-      padding-top: calc(5rem + 1 * (100vw - 47.9375rem) / 14);
+      padding-top: calc(3.125rem + 2.875 * (100vw - 47.9375rem) / 14);
     }
 }
 
-@supports (padding-bottom: clamp( 5rem , 1.5758928571rem  +  7.1428571429vw , 6rem )) {
+@supports (padding-bottom: clamp( 3.125rem , -6.7193080357rem  +  20.5357142857vw , 6rem )) {
     .cta__body {
-      padding-bottom: clamp( 5rem , 1.5758928571rem  +  7.1428571429vw , 6rem );
+      padding-bottom: clamp( 3.125rem , -6.7193080357rem  +  20.5357142857vw , 6rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 5rem , 1.5758928571rem  +  7.1428571429vw , 6rem )) {
+@supports not (padding-bottom: clamp( 3.125rem , -6.7193080357rem  +  20.5357142857vw , 6rem )) {
     .cta__body {
-      padding-bottom: calc(5rem + 1 * (100vw - 47.9375rem) / 14);
+      padding-bottom: calc(3.125rem + 2.875 * (100vw - 47.9375rem) / 14);
     }
 }
 }
