@@ -3742,7 +3742,7 @@
         });
     }
     function initSliders() {
-        if (document.querySelector(".swiper")) new core(".swiper", {
+        if (document.querySelector(".categories__slider")) new core(".categories__slider", {
             modules: [ Navigation, Pagination ],
             observer: true,
             observeParents: true,
@@ -3805,6 +3805,60 @@
                 },
                 1620: {
                     slidesPerView: 6,
+                    spaceBetween: 30
+                }
+            },
+            watchOverflow: true,
+            on: {}
+        });
+        if (document.querySelector(".tranding__slider")) new core(".tranding__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoHeight: true,
+            speed: 600,
+            loop: true,
+            pagination: {
+                el: ".tranding__pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".tranding__arrow--prew",
+                nextEl: ".tranding__arrow--next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                425: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 30
+                },
+                600: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30
+                },
+                700: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 30
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1200: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 30
+                },
+                1350: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                1620: {
+                    slidesPerView: 4,
                     spaceBetween: 30
                 }
             },
