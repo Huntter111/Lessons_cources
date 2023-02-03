@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Create Account</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230203111128">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="100" class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo _icon-logo"><img src="img/icons/nft-marketplace.svg" alt="" /></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Marketplace</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Rankings</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Connect a wallet</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button data-da=".menu__list, 690, last" class="button header__button button--secondary _icon-user">
+					Sign Up
+				</button>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__connect-wallet connect-wallet create-account">
+				<div class="connect-wallet__wrapper create-account__wrapper">
+					<div class="connect-wallet__image-ibg">
+						<picture><source srcset="img/page-create/01.webp" type="image/webp"><img src="img/page-create/01.png" alt="" /></picture>
+					</div>
+					<div class="connect-wallet__body create-account__body">
+						<div class="headline connect-wallet-headline">
+							<div class="headline__body">
+								<h2 class="headline__title connect-wallet-headline__title">Connect wallet</h2>
+								<h3 class="headline__sub-title connect-wallet-headline__sub-title">
+									Choose a wallet you want to connect. There are several wallet providers.
+								</h3>
+							</div>
+						</div>
+						<form action="files/sendmail/sendmail.php" method="POST" class="create-account__form form-create">
+							<div class="form-create__line">
+								<input type="text" name="form[username]" data-error="Error" placeholder="Username" class="input form-create__input" />
+								<div class="_icon-user form-create__icon"></div>
+							</div>
+							<div class="form-create__line">
+								<input type="text" name="form[email]" data-error="Error" placeholder="Email Address" class="input form-create__input" />
+								<div class="_icon-envelope-simple form-create__icon"></div>
+							</div>
+							<div class="form-create__line">
+								<input type="text" name="form[password]" data-error="Error" placeholder="Password" class="input form-create__input" />
+								<div class="_icon-lock-key form-create__icon"></div>
+							</div>
+
+							<div class="form-create__line">
+								<input type="text" name="form[confirmpassword]" data-error="Error " placeholder="Confirm Password" class="input form-create__input" />
+								<div class="button-eye _icon-eye form-create__icon"></div>
+							</div>
+							<button type="submit" class="button button--tertiary form-create__button">
+								Create account
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- <div class="headline">
+					<div class="headline__body">
+						<h2 class="headline__title">Top creators</h2>
+						<div class="headline__sub-title">Checkout Top Rated Creators on the NFT Marketplace</div>
+					</div>
+					<a href="" class="headline__button button button--secondary _icon-rocket-launch">View Rankings</a>
+				</div> -->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<a href="" class="footer__logo _icon-logo">
+							<img src="img/icons/nft-marketplace.svg" alt="" />
+						</a>
+						<div class="footer__body-column">
+							<div class="footer__text">NFT marketplace UI created with Anima for Figma.</div>
+							<div class="footer__community-info">
+								<h5 class="footer__icons-title">Join our community</h5>
+								<div class="footer__icons">
+									<a href="" class="footer__icon-link _icon-discord"></a>
+									<a href="" class="footer__icon-link _icon-youtube"></a>
+									<a href="" class="footer__icon-link _icon-twitter"></a>
+									<a href="" class="footer__icon-link _icon-instagram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Explore</h3>
+						<nav class="footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link">Marketplace</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link">Rankings</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="" class="footer-menu__link">Connect a wallet</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Join our weekly digest</h3>
+						<div class="footer__sub-title">Get exclusive promotions & updates straight to your inbox.</div>
+						<form class="form footer-form" action="files/sendmail/sendmail.php" method="POST">
+							<div class="footer-form__line form__line">
+								<input type="text" name="form[email]" data-error="Error" placeholder="Enter your email here" class="input form__input footer-form__input" />
+								<button type="submit" class="button button--secondary form__button footer-form__button">
+									Subscribe
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footer__copywrithing">&#169; NFT Market. Use this template freely.</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20230203111128"></script>
+
+</body>
+
+</html>

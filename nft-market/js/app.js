@@ -179,6 +179,32 @@
         }
     };
     let addWindowScrollEvent = false;
+    function headerScroll() {
+        addWindowScrollEvent = true;
+        const header = document.querySelector("header.header");
+        const headerShow = header.hasAttribute("data-scroll-show");
+        const headerShowTimer = header.dataset.scrollShow ? header.dataset.scrollShow : 500;
+        const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
+        let scrollDirection = 0;
+        let timer;
+        document.addEventListener("windowScroll", (function(e) {
+            const scrollTop = window.scrollY;
+            clearTimeout(timer);
+            if (scrollTop >= startPoint) {
+                !header.classList.contains("_header-scroll") ? header.classList.add("_header-scroll") : null;
+                if (headerShow) {
+                    if (scrollTop > scrollDirection) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null; else !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                    timer = setTimeout((() => {
+                        !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                    }), headerShowTimer);
+                }
+            } else {
+                header.classList.contains("_header-scroll") ? header.classList.remove("_header-scroll") : null;
+                if (headerShow) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
+            }
+            scrollDirection = scrollTop <= 0 ? 0 : scrollTop;
+        }));
+    }
     setTimeout((() => {
         if (addWindowScrollEvent) {
             let windowScroll = new Event("windowScroll");
@@ -271,6 +297,35 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    document.addEventListener("DOMContentLoaded", (function() {
+        const deadline = new Date(2025, 2, 2);
+        let timerId = null;
+        function declensionNum(num, words) {
+            return words[num % 100 > 4 && num % 100 < 20 ? 2 : [ 2, 0, 1, 1, 1, 2 ][num % 10 < 5 ? num % 10 : 5]];
+        }
+        function countdownTimer() {
+            const diff = deadline - new Date;
+            if (diff <= 0) clearInterval(timerId);
+            const days = diff > 0 ? Math.floor(diff / 1e3 / 60 / 60 / 24) : 0;
+            const hours = diff > 0 ? Math.floor(diff / 1e3 / 60 / 60) % 24 : 0;
+            const minutes = diff > 0 ? Math.floor(diff / 1e3 / 60) % 60 : 0;
+            const seconds = diff > 0 ? Math.floor(diff / 1e3) % 60 : 0;
+            $days.textContent = days < 10 ? "0" + days : days;
+            $hours.textContent = hours < 10 ? "0" + hours : hours;
+            $minutes.textContent = minutes < 10 ? "0" + minutes : minutes;
+            $seconds.textContent = seconds < 10 ? "0" + seconds : seconds;
+            $days.dataset.title = declensionNum(days, [ "day", "day", "days" ]);
+            $hours.dataset.title = declensionNum(hours, [ "Hours", "Hours", "Hours" ]);
+            $minutes.dataset.title = declensionNum(minutes, [ "minute", "minutes", "minutes" ]);
+            $seconds.dataset.title = declensionNum(seconds, [ "second", "second", "second" ]);
+        }
+        const $days = document.querySelector(".timer__days");
+        const $hours = document.querySelector(".timer__hours");
+        const $minutes = document.querySelector(".timer__minutes");
+        const $seconds = document.querySelector(".timer__seconds");
+        countdownTimer();
+        timerId = setInterval(countdownTimer, 1e3);
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
@@ -278,4 +333,5 @@
         viewPass: false,
         autoHeight: false
     });
+    headerScroll();
 })();

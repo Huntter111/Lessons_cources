@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230131211038">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230203111128">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="100" class="header">
 			<div class="header__container">
 				<a href="#" class="header__logo _icon-logo"><img src="img/icons/nft-marketplace.svg" alt="" /></a>
 				<div class="header__menu menu">
@@ -459,17 +459,17 @@
 						<a href="" class="more-nfts__button button button--secondary button-border _icon-eye">See All</a>
 					</div>
 					<div class="more-nfts__cards">
-						<a href="" class="more-nfts__card card-nft">
+						<article href="" class="more-nfts__card card-nft">
 							<div class="card-nft__image-ibg">
-								<picture><source srcset="img/more-nfts/01.webp" type="image/webp"><img src="img/more-nfts/01.png" alt="image" /></picture>
+								<a href=""><picture><source srcset="img/more-nfts/01.webp" type="image/webp"><img src="img/more-nfts/01.png" alt="image" /></picture></a>
 							</div>
 							<div class="card-nft__body">
 								<div class="card-nft__artst">
-									<h3 class="card-nft__name">Distant Galaxy</h3>
-									<div class="card-nft__artist">
+									<h3 class="card-nft__name"><a href="">Distant Galaxy</a></h3>
+									<a href="" class="card-nft__artist">
 										<picture><source srcset="img/avatars/16.webp" type="image/webp"><img class="card-nft__avart" src="img/avatars/16.png" alt="avatar" /></picture>
 										<h4 class="card-nft__artist-name">MoonDancer</h4>
-									</div>
+									</a>
 								</div>
 								<div class="card-nft__additional-info additional-info">
 									<div class="additional-info__column">
@@ -482,18 +482,18 @@
 									</div>
 								</div>
 							</div>
-						</a>
-						<a href="" class="more-nfts__card card-nft">
+						</article>
+						<article href="" class="more-nfts__card card-nft">
 							<div class="card-nft__image-ibg">
-								<picture><source srcset="img/more-nfts/02.webp" type="image/webp"><img src="img/more-nfts/02.png" alt="image" /></picture>
+								<a href=""><picture><source srcset="img/more-nfts/02.webp" type="image/webp"><img src="img/more-nfts/02.png" alt="image" /></picture></a>
 							</div>
 							<div class="card-nft__body">
 								<div class="card-nft__artst">
-									<h3 class="card-nft__name">Life On Edena</h3>
-									<div class="card-nft__artist">
+									<h3 class="card-nft__name"><a href="">Life On Edena</a></h3>
+									<a href="" class="card-nft__artist">
 										<picture><source srcset="img/avatars/10.webp" type="image/webp"><img class="card-nft__avart" src="img/avatars/10.png" alt="avatar" /></picture>
 										<h4 class="card-nft__artist-name">NebulaKid</h4>
-									</div>
+									</a>
 								</div>
 								<div class="card-nft__additional-info additional-info">
 									<div class="additional-info__column">
@@ -506,18 +506,18 @@
 									</div>
 								</div>
 							</div>
-						</a>
-						<a href="" class="more-nfts__card card-nft">
+						</article>
+						<article href="" class="more-nfts__card card-nft">
 							<div class="card-nft__image-ibg">
-								<picture><source srcset="img/more-nfts/03.webp" type="image/webp"><img src="img/more-nfts/03.png" alt="image" /></picture>
+								<a href=""><picture><source srcset="img/more-nfts/03.webp" type="image/webp"><img src="img/more-nfts/03.png" alt="image" /></picture></a>
 							</div>
 							<div class="card-nft__body">
 								<div class="card-nft__artst">
-									<h3 class="card-nft__name">AstroFiction</h3>
-									<div class="card-nft__artist">
+									<h3 class="card-nft__name"><a href="AstroFiction">AstroFiction</a></h3>
+									<a href="" class="card-nft__artist">
 										<picture><source srcset="img/avatars/15.webp" type="image/webp"><img class="card-nft__avart" src="img/avatars/15.png" alt="avatar" /></picture>
 										<h4 class="card-nft__artist-name">Spaceone</h4>
-									</div>
+									</a>
 								</div>
 								<div class="card-nft__additional-info additional-info">
 									<div class="additional-info__column">
@@ -530,7 +530,7 @@
 									</div>
 								</div>
 							</div>
-						</a>
+						</article>
 					</div>
 				</div>
 			</section>
@@ -544,13 +544,21 @@
 						<h2 class="nft-highlight__title">Magic Mashrooms</h2>
 						<a data-da=".nft-highlight__container, 600, last" href="" class="nft-highlight__button button button--secondary _icon-eye">See NFT</a>
 					</div>
+					<!-- <div class="timer">
+							<div class="timer__items">
+								<div class="timer__item timer__days">00</div>
+								<div class="timer__item timer__hours">00</div>
+								<div class="timer__item timer__minutes">00</div>
+								<div class="timer__item timer__seconds">00</div>
+							</div>
+						</div> -->
 					<div class="timer">
 						<h4 class="timer__title">Auction ends in:</h4>
 						<div class="timer__items">
-							<!-- <div class="timer__item timer__days">59</div> -->
-							<div class="timer__item timer__hours">59</div>
-							<div class="timer__item timer__minutes">59</div>
-							<div class="timer__item timer__seconds">59</div>
+							<div class="timer__item timer__days">00</div>
+							<div class="timer__item timer__hours">00</div>
+							<div class="timer__item timer__minutes">00</div>
+							<div class="timer__item timer__seconds">00</div>
 						</div>
 					</div>
 				</div>
@@ -688,7 +696,8 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20230131211038"></script>
+	<script src="js/app.min.js?_v=20230203111128"></script>
+
 </body>
 
 </html>
